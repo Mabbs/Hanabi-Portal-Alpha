@@ -78,6 +78,7 @@ layout:default
   {% endfor %}
         </div>
         
+{% if paginator.total_pages > 1 %}
             <div id="zan-page" class="clearfix">
                 <ul class="pagination pagination-zan pull-right">
   {% for page in (1..paginator.total_pages) %}
@@ -95,3 +96,4 @@ layout:default
   {% endfor %}
                 </ul>
             </div>
+{% endif %}
