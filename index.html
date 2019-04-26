@@ -12,7 +12,6 @@ layout: default
                         <span class="month">{{ post.date | date: "%m" }} 月</span>
                         <span class="day">{{ post.date | date: "%d" }}</span>
                     </div>
-                    @*大型设备文章属性*@
                     <section class="hidden-xs">
                         <div class="title-article">
                             <h1>
@@ -43,8 +42,6 @@ layout: default
                             </div><a href="{{ page.bbslink }}"> </a> <p></p>
                         </div>
                     </section>
-                    @*大型设备文章属性结束 *@
-                    @*小型设备文章属性*@
                     <section class="visible-xs">
                         <div class="title-article">
                             <center>
@@ -77,8 +74,7 @@ layout: default
                 </div>
   {% endfor %}
         </div>
-        
-{% if paginator.total_pages > 1 %}
+
             <div id="zan-page" class="clearfix">
                 <ul class="pagination pagination-zan pull-right">
   {% for page in (1..paginator.total_pages) %}
@@ -96,4 +92,3 @@ layout: default
   {% endfor %}
                 </ul>
             </div>
-{% endif %}
