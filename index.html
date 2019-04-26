@@ -22,31 +22,31 @@ layout: default
                         </div>
                         <div class="tag-article">
                             <span class="label label-zan">
-                                <i class="fa fa-eye"></i> {{ page.publisher | default: "Publisher" }}
+                                <i class="fa fa-eye"></i> {{ post.publisher | default: "Publisher" }}
                             </span>
                             <span class="label label-zan">
-                                <i class="fa fa-eye"></i> {{ page.transer | default: "Transer" }}
+                                <i class="fa fa-eye"></i> {{ post.transer | default: "Transer" }}
                             </span>
                         </div>
                         <div class="alert alert-zan mybody3">
                             <p style="text-align: center;">
-                                <a href="{{ page.bbslink }}"> </a>
+                                <a href="{{ post.bbslink }}"> </a>
                             </p>
                             <div class="ih-item square effect bottom_to_top">
-                                <a href="{{ page.bbslink }}">
+                                <a href="{{ post.bbslink }}">
                                     <div class="img">
-                                        <img src="{{ page.imgurl }}" alt="{{ post.title }}">
+                                        <img src="{{ post.imgurl }}" alt="{{ post.title }}">
                                     </div>
                                     <div class="info"><p>{{ post.excerpt | strip_html | strip_newlines }} </p></div>
                                 </a>
-                            </div><a href="{{ page.bbslink }}"> </a> <p></p>
+                            </div><a href="{{ post.bbslink }}"> </a> <p></p>
                         </div>
                     </section>
                     <section class="visible-xs">
                         <div class="title-article">
                             <center>
                                 <h4>
-                                    <a href="{{ page.bbslink }}">
+                                    <a href="{{ post.bbslink }}">
                                         <span class="animated_h1">{{ post.title }}</span>
                                     </a>
                                 </h4>
@@ -59,17 +59,17 @@ layout: default
                         <p></p>
                         <p> </p>
                         <center>
-                            <i class="fa fa-eye"></i>{{ page.Publisher | default: "Publisher" }}
+                            <i class="fa fa-eye"></i>{{ post.Publisher | default: "Publisher" }}
                         </center>
                         <p></p>
                         <div class="alert alert-zan mybody3">
                             <p style="text-align: center;">
-                                <a href="{{ page.bbslink }}" title="{{ post.title }}">
-                                    <img src="{{ page.imgurl }}" alt="{{ post.title }}">
+                                <a href="{{ post.bbslink }}" title="{{ post.title }}">
+                                    <img src="{{ post.imgurl }}" alt="{{ post.title }}">
                                 </a>
                             </p>
                         </div>
-                        <div class="alert alert-zan">{{ post.excerpt | strip_html | strip_newlines }}</div> <a class="btn btn-danger pull-right read-more btn-block" href="{{ page.bbslink }}" title="{{ post.title }}">阅读全文</a>
+                        <div class="alert alert-zan">{{ post.excerpt | strip_html | strip_newlines }}</div> <a class="btn btn-danger pull-right read-more btn-block" href="{{ post.bbslink }}" title="{{ post.title }}">阅读全文</a>
                     </section>
                 </div>
   {% endfor %}
