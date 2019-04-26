@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+    <link rel="stylesheet" id="bootstrap-style-css" href="/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" id="mystyle-css" href="/css/myblog.css" type="text/css" media="all">
+    <meta name="referrer" content="never" />
+    <style type="text/css">
+        .cb-slideshow li:nth-child(1) span {
+            background-image: url(/images/BG1.jpg);
+        }
+
+        .cb-slideshow li:nth-child(2) span {
+            background-image: url(/images/BG2.jpg);
+        }
+
+        .cb-slideshow li:nth-child(3) span {
+            background-image: url(/images/BG3.jpg);
+        }
+
+        .cb-slideshow li:nth-child(4) span {
+            background-image: url(/images/BG4.jpg);
+        }
+
+        .cb-slideshow li:nth-child(5) span {
+            background-image: url(/images/BG5.jpg);
+        }
+
+        .cb-slideshow li:nth-child(6) span {
+            background-image: url(/images/BG6.jpg);
+        }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>花火学园 - 汉化硬盘版</title>
+    
+    <link rel="stylesheet" href="/css/site.css" />
+    <style>
+        @@media (min-width: 768px) {
+            .navbar-nav > li > a {
+                max-width: 10em;
+            }
+            .row{
+            justify-content: center;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var list = document.getElementsByClassName("article well clearfix mybody3 aos-init");
+            for (var i = 0; i < list.length; i++) {
+                list[i].className += " aos-animate";
+            }
+        };
+    </script>
+</head>
+<body class="home blog" ondragstart="return false" aos-easing="ease-out-back" aos-duration="1000" aos-delay="0">
+    <section class="hidden-xs"> <ul class="cb-slideshow"> <li><span>富强</span></li> <li><span>民主</span></li> <li><span>文明</span></li> <li><span>和谐</span></li> <li><span>公正</span></li> <li><span>法治</span></li> </ul></section>
+    <header id="zan-header" class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-collapse bs-navbar-collapse collapse">
+                <ul id="menu-caidan" class="nav navbar-nav">
+                    <li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-43">
+                        <a href="https://www.say-huahuo.com/">
+                            <i class="fa fa-home"></i>花火学园
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div id="zan-bodyer">
+        <div class="container">
+
+
+<div class="row">
+
+<!-- 搜索占位 -->
+
+ {{ content }}
+
+</div>
+        </div>
+    </div>
+
+
+        </div>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - By Say-Hanabi
+        </div>
+    </footer>
+</body>
+</html>
